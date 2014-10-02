@@ -7,6 +7,7 @@ var config = {
 var server = require('http').Server();
 var serverio = require('socket.io').listen(server, config.server_opts);
 server.listen(config.server_port);
+var _ = require('_');
 
 var players = [];
 
@@ -15,13 +16,13 @@ var red = data.red,
   green = data.green;
 
 serverio.of('/game').on('connection', function(socket) {
-  // TODO: add socket
 
   socket.on('disconnect', function() {
-    // TODO: remove socket
+    players = _.without(players, socket);
+    console.log('Player count', players.length);
   });
 
   socket.on('authme', function() {
-
+    players.append(socket);
   });
 });
