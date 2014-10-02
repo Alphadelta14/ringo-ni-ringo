@@ -10,8 +10,9 @@ server.listen(config.server_port);
 
 var players = [];
 
-var red_cards = require('../data/red.json'),
-  green_cards = require('../data/green.json');
+var data = require('../data/apples.json');
+var red = data.red,
+  green = data.green;
 
 serverio.of('/game').on('connection', function(socket) {
   // TODO: add socket
