@@ -1,0 +1,34 @@
+<!doctype html public "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='/unauthenticated/reset-fonts-grids-base.css'>
+<link rel='stylesheet' type='text/css' href='/unauthenticated/virtual-server-style.css' />
+<!--[if IE]>
+<style type="text/css">
+table.formsection, table.ui_table, table.loginform { border-collapse: collapse; }
+</style>
+<![endif]-->
+<script>
+var rowsel = new Array();
+</script>
+<script type='text/javascript' src='/unauthenticated/sorttable.js'></script>
+<style type="text/css">
+textarea,pre { font-size:120%; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; Charset=UTF-8">
+<title>Security Warning</title>
+<script type='text/javascript'>
+window.defaultStatus="root logged into Webmin 1.710 on faith.projectpokemon.org (Debian Linux 7.6)";
+</script>
+</head>
+<body bgcolor=#ffffff link=#376ebd vlink=#376ebd text=#000000>
+<table class='header' width=100%><tr>
+<td id='headln2l' width=15% valign=top align=left></td>
+<td id='headln2c' align=center width=70%><font size=+2>Security Warning</font></td>
+<td id='headln2r' width=15% valign=top align=right></td></tr></table>
+<b>Warning!</b> Webmin has detected that the program <tt>https://faith.projectpokemon.org:10000/mysql/csv.cgi/apples.csv</tt> was linked to from an unknown URL, which appears to be outside the Webmin server. This may be an attempt to trick your server into executing a dangerous command.<p>
+If your browser does not send the <tt>Referer</tt> header needed, you can turn off this check as follows :<ul><li>Login to Webmin normally.<li>Go to the <b>Webmin Configuration</b> module.<li>Click on the Trusted Referrers icon.<li>Check the <b>Trust links from unknown referrers</b> box, and click <b>Save</b>.</ul><p>
+Alternately, you can configure Webmin to allow links from unknown referers by :<ul><li>Login as <tt>root</tt>, and edit the <tt>/etc/webmin/config</tt> file.<li>Find the line <tt>referers_none=1</tt> and change it to <tt>referers_none=0</tt>.<li>Save the file.</ul><p>
+<p>
+<br>
+</body></html>
