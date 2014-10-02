@@ -1,0 +1,66 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ece270;
+}
+
+body {
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top left, #6EA2C4 0%, #64E868 100%);
+
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top left, #6EA2C4 0%, #64E868 100%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(top left, #6EA2C4 0%, #64E868 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #6EA2C4), color-stop(1, #64E868));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top left, #6EA2C4 0%, #64E868 100%);
+
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom right, #6EA2C4 0%, #64E868 100%);
+}
+
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
+#left-bar {
+  float: left;
+  height: 100%;
+  background-color: #2bb31d;
+  border-right: 15px #ff0000 solid;
+}
+
+#right-bar {
+  float: right;
+  height: 100%;
+/*   background-color: #2bb31d; */
+  border-left: 15px #ff0000 solid;
+}
+
+#left-bar .logo {
+  width: 300px;
+}
+
+#middle-bar {
+  float: left;
+  height: 100%;
+/*   background-color: #2bb31d; */
+  border-right: 40px #ece270 solid;
+}
+
+#head {
+  background-color: #ece270;
+  padding: 5px;
+  color: #000;
+}
